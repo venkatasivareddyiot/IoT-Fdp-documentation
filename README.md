@@ -31,4 +31,30 @@ characteristic of the LED is color. In the starting use of LED, there is the onl
 increased with the help of the semiconductor process and doing the research on the new metals for LED, the
 different colors were formed.
 
-##
+## Types of LED'S
+    Through hole LED
+    SMD LED
+    Bi colour LED
+    Tri colour LED(RGB)
+# Arduino
+    The Arduino UNO is the best board to get started with electronics and coding. If this is your first experience tinkering with the platform, the UNO is the most robust board you can start playing with. The UNO is the most used and documented board of the whole Arduino family.
+    
+## Installing on Arduino software:
+
+
+
+
+### Arduino with LED
+int led=13;
+void main()
+{
+pinMode(led,13);
+}
+void loop()
+{
+digitalWrite(13,HIGH);
+delay(500);
+digitalWrite(13,LOW);
+delay(500);
+}
+
