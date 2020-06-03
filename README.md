@@ -37,7 +37,7 @@ different colors were formed.
     Bi colour LED
     Tri colour LED(RGB)
 # Arduino
-    The Arduino UNO is the best board to get started with electronics and coding. If this is your first experience tinkering with the platform, the UNO is the most robust board you can start playing with. The UNO is the most used and documented board of the whole Arduino family.
+        The Arduino UNO is the best board to get started with electronics and coding. If this is your first experience tinkering with       the platform, the UNO is the most robust board you can start playing with. The UNO is the most used and documented board of the         whole Arduino family.
     
 ## Installing on Arduino software:
 
@@ -45,16 +45,19 @@ different colors were formed.
 
 
 ### Arduino with LED
-int led=13;
-void main()
-{
-pinMode(led,13);
-}
-void loop()
-{
-digitalWrite(13,HIGH);
-delay(500);
-digitalWrite(13,LOW);
-delay(500);
-}
+    int led=13;
+    void main()
+    {
+    pinMode(led,13);
+    }
+    void loop()
+    {
+    digitalWrite(13,HIGH);
+    delay(500);
+    digitalWrite(13,LOW);
+    delay(500);
+    }
 
+# LDR
+    A photoresistor (acronymed LDR for Light Decreasing Resistance, or light-dependent resistor, or photo-conductive cell) is a passive component that decreases resistance with respect to receiving luminosity (light) on the component's sensitive surface. The resistance of a photoresistor decreases with increase in incident light intensity; in other words, it exhibits photoconductivity. A photoresistor can be applied in light-sensitive detector circuits and light-activated and dark-activated switching circuits acting as a resistance semiconductor. In the dark, a photoresistor can have a resistance as high as several megaohms (MΩ), while in the light, a photoresistor can have a resistance as low as a few hundred ohms. If incident light on a photoresistor exceeds a certain frequency, photons absorbed by the semiconductor give bound electrons enough energy to jump into the conduction band. The resulting free electrons (and their hole partners) conduct electricity, thereby lowering resistance. The resistance range and sensitivity of a photoresistor can substantially differ among dissimilar devices. Moreover, unique photoresistors may react substantially differently to photons within certain wavelength bands.
+    
