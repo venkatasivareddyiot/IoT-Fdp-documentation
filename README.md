@@ -61,3 +61,25 @@ different colors were formed.
 # LDR
     A photoresistor (acronymed LDR for Light Decreasing Resistance, or light-dependent resistor, or photo-conductive cell) is a passive component that decreases resistance with respect to receiving luminosity (light) on the component's sensitive surface. The resistance of a photoresistor decreases with increase in incident light intensity; in other words, it exhibits photoconductivity. A photoresistor can be applied in light-sensitive detector circuits and light-activated and dark-activated switching circuits acting as a resistance semiconductor. In the dark, a photoresistor can have a resistance as high as several megaohms (MΩ), while in the light, a photoresistor can have a resistance as low as a few hundred ohms. If incident light on a photoresistor exceeds a certain frequency, photons absorbed by the semiconductor give bound electrons enough energy to jump into the conduction band. The resulting free electrons (and their hole partners) conduct electricity, thereby lowering resistance. The resistance range and sensitivity of a photoresistor can substantially differ among dissimilar devices. Moreover, unique photoresistors may react substantially differently to photons within certain wavelength bands.
     
+int ldr=A0;
+int led=2;
+void setup() {
+pinMode(ldr,INPUT);
+pinMode(led,OUTPUT);
+Serial.begin(9600);// put your setup code here, to run once:
+}
+void loop() {
+int value=analogRead(ldr);
+Serial.println(value);
+if(value<100)
+{
+digitalWrite(led,1);
+}
+else
+{
+digitalWrite(led,0);
+}
+}
+
+## Ultra Sonic Sensor
+    
