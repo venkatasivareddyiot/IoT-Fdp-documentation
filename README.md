@@ -61,25 +61,93 @@ different colors were formed.
 # LDR
     A photoresistor (acronymed LDR for Light Decreasing Resistance, or light-dependent resistor, or photo-conductive cell) is a passive component that decreases resistance with respect to receiving luminosity (light) on the component's sensitive surface. The resistance of a photoresistor decreases with increase in incident light intensity; in other words, it exhibits photoconductivity. A photoresistor can be applied in light-sensitive detector circuits and light-activated and dark-activated switching circuits acting as a resistance semiconductor. In the dark, a photoresistor can have a resistance as high as several megaohms (MΩ), while in the light, a photoresistor can have a resistance as low as a few hundred ohms. If incident light on a photoresistor exceeds a certain frequency, photons absorbed by the semiconductor give bound electrons enough energy to jump into the conduction band. The resulting free electrons (and their hole partners) conduct electricity, thereby lowering resistance. The resistance range and sensitivity of a photoresistor can substantially differ among dissimilar devices. Moreover, unique photoresistors may react substantially differently to photons within certain wavelength bands.
     
-int ldr=A0;
-int led=2;
-void setup() {
-pinMode(ldr,INPUT);
-pinMode(led,OUTPUT);
-Serial.begin(9600);// put your setup code here, to run once:
-}
-void loop() {
-int value=analogRead(ldr);
-Serial.println(value);
-if(value<100)
-{
-digitalWrite(led,1);
-}
-else
-{
-digitalWrite(led,0);
-}
-}
+    int ldr=A0;
+    int led=2;
+    void setup() {
+    pinMode(ldr,INPUT);
+    pinMode(led,OUTPUT);
+    Serial.begin(9600);// put your setup code here, to run once:
+    }
+    void loop() {
+    int value=analogRead(ldr);
+    Serial.println(value);
+    if(value<100)
+    {
+    digitalWrite(led,1);
+    }
+    else
+    {
+    digitalWrite(led,0);
+    }
+    }
 
-## Ultra Sonic Sensor
-    
+## Button
+
+    int led=5;
+    int button=6;
+    void setup()
+    {
+    pinMode(5,OUTPUT);
+    pinMode(6,INPUT);
+    }
+    void loop()
+    {
+    a=digitalRead(6);
+    if(a==1)
+    {
+    digitalWrite(5,1);
+    }
+    else
+    {
+    digitalWrite(5,0);
+    }
+    }
+
+## Servo Motor
+
+    A servomotor is a rotary actuator or linear actuator that allows for precise control of angular or linear position, velocity and acceleration.[1] It consists of a suitable motor coupled to a sensor for position feedback. It also requires a relatively sophisticated controller, often a dedicated module designed specifically for use with servomotors.
+Servomotors are not a specific class of motor, although the term servomotor is often used to refer to a motor suitable for use in a closed-loop control system.Servomotors are used in applications such as robotics, CNC machinery or automated manufacturing.
+
+    #include<Servo.h>
+    Servo myservo;
+    void setup() {
+    myservo.attach(3);
+    }
+    void loop() 
+    {
+    myservo.write(0);
+    delay(1000);
+    myservo.write(90);
+    delay(1000);
+    myservo.write(180);
+    delay(1000);
+    }
+
+# Ultra Sonic Sensor
+
+An ultrasonic sensor is an electronic device that measures the distance of a target object by emitting ultrasonic sound waves, and converts the reflected sound into an electrical signal. Ultrasonic waves travel faster than the speed of audible sound (i.e. the sound that humans can hear). Ultrasonic sensors have two main components: the transmitter (which emits the sound using piezoelectric crystals) and the receiver (which encounters the sound after it has travelled to and from the target).
+In order to calculate the distance between the sensor and the object, the sensor measures the time it takes between the emission of the sound by the transmitter to its contact with the receiver. The formula for this calculation is D = ½ T x C (where D is the distance, T is the time, and C is the speed of sound ~ 343 meters/second). For example, if a scientist set up an ultrasonic sensor aimed at a box and it took 0.025 seconds for the sound to bounce back, the distance between the ultrasonic sensor and the box would be:
+D = 0.5 x 0.025 x 343
+
+    int trigger=2;
+    int echo=4;
+    void setup() 
+    {
+    pinMode(2,OUTPUT);
+    pinMode(4,INPUT);
+    Serial.begin(9600);
+    }
+    void loop() 
+    {
+    digitalWrite(2,LOW);
+    delayMicroseconds(2);
+    digitalWrite(2,HIGH);
+    delayMicroseconds(10);
+    digitalWrite(2,LOW);
+    long duration=pulseIn(4,HIGH);
+    float distance=0.034*duration/2;
+    Serial.println(distance);
+    delay(1000);
+    }
+
+# LCD
