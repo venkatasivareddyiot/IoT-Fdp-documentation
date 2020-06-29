@@ -175,4 +175,4 @@ You can make projects like Weather Station, Tide Prediction, Counter and Many Mo
 4.Jumper Wires
 5.Breadboard (Optional)
 ### Circuit Diagram:
-<img src='Dht 11 with NodeMCU.jpg' alt='Circuit Diagram' />
+<img src='Dht 11 with NodeMCU.JPG' alt='Circuit Diagram' />
