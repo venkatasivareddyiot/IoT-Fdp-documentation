@@ -168,3 +168,11 @@ You can make projects like Weather Station, Tide Prediction, Counter and Many Mo
 3. REST API and MQTT APIS
 4. MATLAB® Analytics and Visualizations.
 5. Worldwide Community
+ In this we  will be using a DHT11 to plot its Temperature and Humidity on ThingSpeak using NodeMCU. We will program the NodeMCU to read and store the DHT data into a variable and then upload it to ThingSpeak using its channel name and API key. The NodeMCU should be connected to the internet via Wi-Fi. We will see how to create ThingSpeak Channels and configure it on NodeMCU.
+### Hardware Required:
+1.NodeMCU
+2.DHT11 Sensor
+3.10K Ohm Resistor
+4.Jumper Wires
+5.Breadboard (Optional)
+### Circuit Diagram:
