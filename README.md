@@ -3,7 +3,7 @@ IoT Documentation
 This is all about iot documentation and all the things that you learn in the training sessions
 <img src='battery.jpg' alt='battery' />
 ## What is IOT?
-    IoT is simply the network of interconnected things/devices which are embedded with sensors, software, network connectivity and necessary electronics that enables them to collect and exchange data making them responsive.
+IoT is simply the network of interconnected things/devices which are embedded with sensors, software, network connectivity and necessary electronics that enables them to collect and exchange data making them responsive.
 ## IOT Uses
     Everyday Life
     Health Care
@@ -176,3 +176,9 @@ You can make projects like Weather Station, Tide Prediction, Counter and Many Mo
 5.Breadboard (Optional)
 ### Circuit Diagram:
 <img src='Dht 11 with NodeMCU.JPG' alt='Circuit Diagram' />
+
+Once the hardware is set up, We can go ahead and create our ThingSpeak Channel.
+
+Step 1: Go to https://thingspeak.com/ and create your ThingSpeak Account if you don’t have. Login to Your Account.
+
+Step 2: Create a Channel by clicking ’New Channel’.
