@@ -285,4 +285,5 @@ void loop()
 
 }
 ```
+Upload the code. Once it is connected to Wi-Fi the data will start uploading to the ThingSpeak Channel. You can now open your Channel and see the data changes plotted on the ThingSpeak.
 <img src='op-1.JPG'/>
