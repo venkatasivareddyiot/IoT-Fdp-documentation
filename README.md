@@ -199,4 +199,20 @@ Save this setting.
 Step 4: Now you can see the channels. Click on the ‘API Keys’ tab. Here you will get the Channel ID and API Keys. Note this down.
 <img src='newcha-3.JPG' />
 
+Step 5: Open Arduino IDE and Install the ThingSpeak Library. To do this go to Sketch>Include Library>Manage Libraries. Search for ThingSpeak and install the library.
+<img src='insli.PNG' />
+Step 6: Now we need to modify the program with your credentials.
+
+In the below code you need to change your Network SSID, Password and your ThingSpeak Channel and API Keys.
+
+Replace the following content in the code,
+
+‘Your SSID Here’ – Your Wi-Fi Name
+
+‘Your Password Here’ – Your Wi-Fi Password
+
+‘YYYYYY’ – Your ThingSpeak Channel Number (without Quotes)
+
+‘XXXXXXXXXXX’ – Your Thing Speak API Key.
+### Code
 
