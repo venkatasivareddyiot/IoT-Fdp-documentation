@@ -189,8 +189,14 @@ Name: Any Name
 
 Description: Optional
 
-Field 1: Light Intensity LDR – This will be displayed on the analytics graph. If you need more than 1 Channels you can create for additional Sensor Data.
+Field 1: Temperature DHT11 – This will be displayed on the analytics graph. If you need more than 1 Channels you can create for additional Sensor Data.
+Field 2: Humidity DHT11 – This will be displayed on the analytics graph. If you need more than 1 Channels you can create for additional Sensor Data.
 
 Save this setting.
 
 <img src='newcha-2.JPG' />
+
+Step 4: Now you can see the channels. Click on the ‘API Keys’ tab. Here you will get the Channel ID and API Keys. Note this down.
+<img src='newcha-3.JPG' />
+
+
