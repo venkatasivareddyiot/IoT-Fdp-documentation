@@ -193,4 +193,4 @@ Field 1: Light Intensity LDR – This will be displayed on the analytics graph. 
 
 Save this setting.
 
-<img src="newcha-2 />
+<img src='newcha-2.JPG' />
