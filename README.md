@@ -216,7 +216,7 @@ Replace the following content in the code,
 
 ‘XXXXXXXXXXX’ – Your Thing Speak API Key.
 ### Code
-'''c
+```c
 #include "DHT.h"
 #include <ESP8266WiFi.h>
 #define DHTPIN D2    
@@ -283,4 +283,4 @@ void loop()
 
     }
 
-} '''
+} ```
