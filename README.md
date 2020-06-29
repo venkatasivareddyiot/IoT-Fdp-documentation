@@ -183,3 +183,14 @@ Step 1: Go to https://thingspeak.com/ and create your ThingSpeak Account if you 
 
 Step 2: Create a Channel by clicking ’New Channel’.
 <img src='newcha.JPG' alt='Circuit Diagram' />
+Step 3: Enter the channel details.
+
+Name: Any Name
+
+Description: Optional
+
+Field 1: Light Intensity LDR – This will be displayed on the analytics graph. If you need more than 1 Channels you can create for additional Sensor Data.
+
+Save this setting.
+
+<img src="newcha-2 />
