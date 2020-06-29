@@ -151,3 +151,20 @@ D = 0.5 x 0.025 x 343
     }
 
 # LCD
+
+
+
+
+
+#### ThingsSpeack Cloud:
+ThingSpeak is an Open-Source IoT application and API to store and retrieve data from Hardware devices and Sensors. It uses HTTP Protocol over the Internet or LAN for its communication. The MATLAB analytics is included to analyze and visualize the data received from your Hardware or Sensor Devices.
+
+We can create channels for each and every sensor data. These channels can be set as private channels or you can share the data publically through Public channels. The commercial features include additional features. But we will be using the free version as we doing it for educational purpose.
+
+You can make projects like Weather Station, Tide Prediction, Counter and Many More.
+##### Features
+1 Collect data in private channels.
+2 Share Data with Public Channels
+3 REST API and MQTT APIS
+4 MATLAB® Analytics and Visualizations.
+5 Worldwide Community
