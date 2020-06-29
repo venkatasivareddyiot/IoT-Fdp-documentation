@@ -1,7 +1,6 @@
 # IoT-Fdp-documentation
 IoT Documentation
 This is all about iot documentation and all the things that you learn in the training sessions
-<img src='battery.jpg' alt='battery' />
 ## What is IOT?
 IoT is simply the network of interconnected things/devices which are embedded with sensors, software, network connectivity and necessary electronics that enables them to collect and exchange data making them responsive.
 ## IOT Uses
@@ -196,8 +195,11 @@ Save this setting.
 
 <img src='newcha-2.JPG' />
 
+<img src='newcha-4.JPG' />
+
+
 Step 4: Now you can see the channels. Click on the ‘API Keys’ tab. Here you will get the Channel ID and API Keys. Note this down.
-<img src='newcha-3.JPG' />
+<img src='write api.JPG' />
 
 Step 5: Open Arduino IDE and Install the ThingSpeak Library. To do this go to Sketch>Include Library>Manage Libraries. Search for ThingSpeak and install the library.
 <img src='inslib.png' />
