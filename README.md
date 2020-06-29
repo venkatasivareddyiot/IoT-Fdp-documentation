@@ -255,7 +255,7 @@ void loop()
     if (client.connect("api.thingspeak.com",80)) {
       request_string = thingSpeakAddress;
       request_string += "key=";
-      request_string += "W2ZC1MSOHFQGTUR7";
+      request_string += "YOUR WRITE API KEY";
       request_string += "&";
       request_string += "field1";
       request_string += "=";
@@ -270,7 +270,7 @@ void loop()
     if (client.connect("api.thingspeak.com",80)) {
       request_string = thingSpeakAddress;
       request_string += "key=";
-      request_string += "W2ZC1MSOHFQGTUR7";
+      request_string += "YOUR WRITE API KEY";
       request_string += "&";
       request_string += "field2";
       request_string += "=";
