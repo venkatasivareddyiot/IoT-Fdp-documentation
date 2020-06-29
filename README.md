@@ -182,3 +182,4 @@ Once the hardware is set up, We can go ahead and create our ThingSpeak Channel.
 Step 1: Go to https://thingspeak.com/ and create your ThingSpeak Account if you don’t have. Login to Your Account.
 
 Step 2: Create a Channel by clicking ’New Channel’.
+<img src='newcha.JPG' alt='Circuit Diagram' />
