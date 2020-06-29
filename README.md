@@ -216,4 +216,71 @@ Replace the following content in the code,
 
 ‘XXXXXXXXXXX’ – Your Thing Speak API Key.
 ### Code
+'''c
+#include "DHT.h"
+#include <ESP8266WiFi.h>
+#define DHTPIN D2    
+#include <ESP8266HTTPClient.h>
+#define DHTTYPE DHT11
+WiFiClient client;
+DHT dht(DHTPIN, DHTTYPE);
+String thingSpeakAddress= "http://api.thingspeak.com/update?";
+String writeAPIKey;
+String tsfield1Name;
+String request_string;
 
+HTTPClient http;
+
+void setup()
+{
+  Serial.begin(9600);
+  Serial.println("Connecting to the Wifi");
+   WiFi.begin("Wifi","12345678");
+  while ((!(WiFi.status() == WL_CONNECTED))){
+    delay(300);
+    Serial.print("....");
+
+  }
+  Serial.println("Successfully Connected to Wifi Network");
+  dht.begin();
+}
+
+
+void loop()
+{
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+  Serial.println(h);
+  Serial.println(t);
+    if (client.connect("api.thingspeak.com",80)) {
+      request_string = thingSpeakAddress;
+      request_string += "key=";
+      request_string += "W2ZC1MSOHFQGTUR7";
+      request_string += "&";
+      request_string += "field1";
+      request_string += "=";
+      request_string += t;
+      Serial.println("Publishing temperature value");
+      Serial.print(t);
+      http.begin(request_string);
+      http.GET();
+      http.end();
+
+    }
+    if (client.connect("api.thingspeak.com",80)) {
+      request_string = thingSpeakAddress;
+      request_string += "key=";
+      request_string += "W2ZC1MSOHFQGTUR7";
+      request_string += "&";
+      request_string += "field2";
+      request_string += "=";
+      request_string += h;
+      Serial.println("Publishing Humidity value");
+      Serial.print(h);
+      http.begin(request_string);
+      http.GET();
+      http.end();
+
+    }
+
+} '''
